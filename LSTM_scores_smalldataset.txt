@@ -1,0 +1,209 @@
+LSTM Model
+lookback: 30
+hidden_dim: 32
+num_layers: 2
+epochs: 100
+learning_rate: 0.001
+batch_size: 64
+criterion: MSELoss
+optimizer: Adam
+
+train_mse: 1086.4044
+test_mse: 6.332114321046646
+train_rmse: 1.5753826594500473
+test_rmse: 2.516369273585784
+train_mape: 5.229529544923711
+test_mape: 2.7546327613416373
+--------------------------------
+LSTM Model
+lookback: 30
+hidden_dim: 32
+num_layers: 2
+epochs: 100
+learning_rate: 0.001
+batch_size: 64
+criterion: MSELoss
+optimizer: Adam
+
+train_mse: 942.2623
+test_mse: 31.96266306803817
+train_rmse: 1.4392079557034363
+test_rmse: 5.653553136571564
+train_mape: 4.61868833702651
+test_mape: 5.446211384462997
+--------------------------------
+#dropout and second linear layer
+LSTM Model
+lookback: 30
+hidden_dim: 128
+num_layers: 2
+epochs: 100
+learning_rate: 0.001
+batch_size: 64
+criterion: MSELoss
+optimizer: Adam
+
+train_mse: 936.50604
+test_mse: 1.1552105934856078
+train_rmse: 1.4541077168846956
+test_rmse: 1.0748072355011422
+train_mape: 4.738923890843555
+test_mape: 1.3838817505363863
+--------------------------------
+#Scheduler LSTM Model
+lookback: 30
+hidden_dim: 128
+num_layers: 2
+epochs: 100
+learning_rate: 0.001
+batch_size: 64
+criterion: MSELoss
+optimizer: Adam
+
+train_mse: 1006.89
+test_mse: 18.71
+train_rmse: 0.84
+test_rmse: 4.33
+train_mape: 2.13
+test_mape: 5.4
+--------------------------------
+LSTM Model
+lookback: 30
+hidden_dim: 128
+num_layers: 2
+epochs: 100
+learning_rate: 0.001
+batch_size: 64
+criterion: MSELoss
+optimizer: Adam
+scheduler: ReduceLROnPlateau
+dropout: 0.3
+patience: 10
+
+train_mse: 1008.01
+test_mse: 1.94
+train_rmse: 0.71
+test_rmse: 1.39
+train_mape: 1.72
+test_mape: 1.57
+--------------------------------
+LSTM Model
+lookback: 40
+hidden_dim: 256
+num_layers: 1
+epochs: 100
+learning_rate: 0.001
+batch_size: 64
+criterion: MSELoss
+optimizer: Adam
+scheduler: none
+dropout: 0.35
+patience: 0
+
+train_mse: 1104.77
+test_mse: 1.74
+train_rmse: 1.76
+test_rmse: 1.32
+train_mape: 5.98
+test_mape: 1.59
+--------------------------------
+LSTM Model
+lookback: 40
+hidden_dim: 256
+num_layers: 1
+epochs: 100
+learning_rate: 0.001
+batch_size: 32
+criterion: MSELoss
+optimizer: Adam
+scheduler: none
+dropout: 0.35
+patience: 0
+
+train_mse: 996.49
+test_mse: 2.19
+train_rmse: 0.57
+test_rmse: 1.48
+train_mape: 1.42 %
+test_mape: 1.75 % 
+--------------------------------
+LSTM Model
+lookback: 40
+hidden_dim: 256
+num_layers: 1
+epochs: 100
+learning_rate: 0.001
+batch_size: 32
+criterion: MSELoss
+optimizer: Adam
+scheduler: ReduceLROnPlateau
+dropout: 0.35
+patience: 10
+
+train_mse: 1009.14
+test_mse: 0.69
+train_rmse: 0.52
+test_rmse: 0.83
+train_mape: 1.22 %
+test_mape: 1.0 %
+--------------------------------
+LSTM Model
+lookback: 40
+hidden_dim: 256
+num_layers: 1
+epochs: 100
+learning_rate: 0.001
+batch_size: 32
+criterion: MSELoss
+optimizer: Adam
+scheduler: ReduceLROnPlateau
+dropout: 0.35
+patience: 10
+
+train_mse: 1009.16
+test_mse: 0.62
+train_rmse: 0.51
+test_rmse: 0.78
+train_mape: 1.2 %
+test_mape: 0.91 %
+-------------------------------
+LSTM Model
+lookback: 14
+hidden_dim: 256
+num_layers: 1
+epochs: 100
+learning_rate: 0.001
+batch_size: 32
+criterion: MSELoss
+optimizer: Adam
+scheduler: ReduceLROnPlateau
+dropout: 0.35
+patience: 10
+
+train_mse: 1001.75
+test_mse: 0.82
+train_rmse: 0.51
+test_rmse: 0.9
+train_mape: 1.2 
+test_mape: 1.11 
+--------------------------------
+LSTM Model
+lookback: 14
+hidden_dim: 256
+num_layers: 1
+epochs: 100
+learning_rate: 0.001
+batch_size: 32
+criterion: MSELoss
+optimizer: Adam
+scheduler: ReduceLROnPlateau
+dropout: 0.35
+patience: 10
+
+train_mse: 0.77
+test_mse: 0.77
+train_rmse: 0.52
+test_rmse: 0.88
+train_mape: 1.25
+test_mape: 1.05
+--------------------------------
